@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Ecommerce Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>ShopSmart</h1>
+        <button id="cart-btn">Cart (<span id="cart-count">0</span>)</button>
+    </header>
+    <main>
+        <section class="products">
+            <div class="product" data-name="Wireless Mouse" data-price="599">
+                <img src="https://via.placeholder.com/150" alt="Wireless Mouse">
+                <h2>Wireless Mouse</h2>
+                <p>₹599</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product" data-name="Headphones" data-price="899">
+                <img src="https://via.placeholder.com/150" alt="Headphones">
+                <h2>Headphones</h2>
+                <p>₹899</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product" data-name="Keyboard" data-price="799">
+                <img src="https://via.placeholder.com/150" alt="Keyboard">
+                <h2>Keyboard</h2>
+                <p>₹799</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </section>
+    </main>
+    <div id="cart-modal" class="modal hidden">
+        <div class="modal-content">
+            <h2>Shopping Cart</h2>
+            <ul id="cart-items"></ul>
+            <p>Total: ₹<span id="cart-total">0</span></p>
+            <button id="close-cart">Close</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
